@@ -12,7 +12,7 @@ for ( let i = 0; i < modifiedArr.length; i++ ){
     touristSpots[i] = mp[modifiedArr[i]];
 }
 // console.log(touristSpots);
-var ul = document.queryselector("#band");
+var ul = document.querySelector("#band");
 for ( let i  = 0; i < touristSpots.length; i++){
 	ul.appendChild(document.createElement(`<li>${touristSpots[i]}<li>`));
 }
