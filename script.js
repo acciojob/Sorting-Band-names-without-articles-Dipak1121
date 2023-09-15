@@ -3,7 +3,7 @@ let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 let modifiedArr = [];
 let mp = {};
 for ( let i = 0; i < touristSpots.length; i++ ){
-    let str = touristSpots[i].replace(/\bThe\b/, "").trim();
+    let str = touristSpots[i].replace(/\bThe\b|\bAn\b|\bA\b/gi, "").trim();
     modifiedArr.push(str);
     mp[str] = touristSpots[i];
 }
